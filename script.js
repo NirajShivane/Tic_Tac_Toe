@@ -34,7 +34,7 @@ const checkWin=()=>{
                 resetEverything();
               }
               
-              setTimeout(delayedFunction, 5000);
+              setTimeout(delayedFunction, 10000);
             isgameover=true;
             function delayedFunction() {
                 resetEverything();
@@ -77,6 +77,8 @@ reset.addEventListener('click', ()=>{
 function resetEverything(){
     let boxtexts=document.querySelectorAll('.boxtext');
     "tic tac toe"/music.pause();
+    // add the reset login here
+    
     Array.from(boxtexts).forEach(element=>{
         element.innerText=""
 
